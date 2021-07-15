@@ -686,6 +686,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.body-bg-green.addons {
+  background-image: url('../img/backgrounds/green-bg-desktop-addons.jpg');
+}
+
 @media (max-width: 1023.98px) {
   .body-bg-green {
     background-image: url('../img/backgrounds/green-bg-mobile.jpg');
@@ -869,6 +873,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+}
+
+.form-page-modal {
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all .4s ease;
+  backface-visibility: hidden;
+}
+
+.form-page-modal.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .form-page-modal .container {
@@ -892,21 +913,6 @@ body {
 
 .form-page-modal .btn:last-child {
   margin-top: .65vw;
-}
-
-.form-page-modal {
-  transform: translateY(100%);
-  opacity: 0;
-  visibility: hidden;
-
-  transition: all .4s ease;
-  backface-visibility: hidden;
-}
-
-.form-page-modal.show {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
 }
 
 @media (max-width: 1023.98px) {
