@@ -61,3 +61,36 @@ if (homeGrid) {
     }
   });
 }
+
+/* #Message Create
+  ======================================================= */
+let thumbs = new Swiper(".thumbs .swiper-container", {
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 7.5
+    },
+    1024: {
+      slidesPerView: 9
+    }
+  }
+});
+
+let gallery = new Swiper(".gallery .swiper-container", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: thumbs,
+  },
+  effect: 'fade'
+});
+
+// Attach color class to text input
+gallery.on('slideChangeTransitionStart', function () {
+  const slideText = document.querySelector('.gallery .swiper-slide-active .text');
+  const textInput = document.querySelector('.gallery .text-input');
+
+  textInput.classList.remove(textInput.classList[1]);
+
+  textInput.classList.add(slideText.classList[1]);
+});

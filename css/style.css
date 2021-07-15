@@ -31,6 +31,8 @@ body {
 ================================================== */
 .btn {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.8vw;
   padding: 0.45vw 2.35vw;
 }
@@ -39,6 +41,7 @@ body {
   color: white;
   background-color: #ba322f;
   border-radius: 1.2vw;
+  border: none;
 }
 
 @media (max-width: 1023.98px) {
@@ -462,6 +465,168 @@ body {
 
   .message-single .message-social ul img {
     width: 8.33vw;
+  }
+}
+
+/* #Message Create
+================================================== */
+.message-create {
+  padding-bottom: 1.5vw;
+}
+
+.message-create .container {
+  width: 30%;
+}
+
+.message-create .container > a {
+  padding: 1vw 0;
+  display: block;
+}
+
+.message-create .message {
+  position: relative;
+}
+
+.message-create .message .bg img {
+  width: 100%;
+}
+
+/* Text */
+.message-create .message .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.message-create .message input {
+  text-align: center;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  width: 100%;
+}
+
+.message-create .message input::placeholder {
+  color: inherit;
+}
+
+/* Gallery */
+.message-create .gallery {
+  position: relative;
+}
+
+.message-create .gallery .text-input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  z-index: 20;
+}
+
+.message-create .gallery .text-input input {
+  text-align: center;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  width: 100%;
+  transition: color .3s ease;
+}
+
+.message-create .gallery .text-input input::placeholder {
+  color: inherit;
+}
+
+/* Thumbs */
+.message-create .thumbs {
+  margin: 1vw 0 2vw 0;
+}
+
+.message-create .thumbs .swiper-slide {
+  padding: 0 .36vw;
+  cursor: pointer;
+}
+
+.message-create .thumbs img {
+  border-radius: 50%;
+  border: 3px solid transparent;
+  /* transition: all .4s ease; */
+  backface-visibility: hidden;
+  padding: 0;
+}
+
+.message-create .thumbs .swiper-slide-thumb-active img {
+  border: 3px solid #e0e0e0;
+  padding: .15vw;
+}
+
+/* Form */
+.message-create .form label {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.message-create .form textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  margin-top: .25vw;
+  margin-bottom: 1.8vw;
+  padding: .5vw;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.message-create .form button {
+  width: 100%;
+  font-size: 2.4vw;
+  padding: 1vw 2.35vw;
+}
+
+@media (max-width: 1023.98px) {
+  .message-create {
+    padding-bottom: 10vw;
+  }
+  
+  .message-create .container {
+    width: 100%;
+  }
+
+  .message-create .container > a {
+    padding: 3.33vw 4%;
+  }
+
+  /* Thumbs */
+  .message-create .thumbs {
+    margin: 2.6vw 0 6.25vw 0;
+  }
+
+  .message-create .thumbs .swiper-slide {
+    padding: 0 1.33vw;
+  }
+
+  .message-create .thumbs .swiper-slide-thumb-active img {
+    padding: .5vw;
+  }
+
+  /* Form */
+  .message-create .form {
+    padding: 0 4%;
+  }
+
+  .message-create .form textarea {
+    margin-top: 2vw;
+    margin-bottom: 6.25vw;
+    padding: 1.33vw;
+  }
+
+  .message-create .form button {
+    font-size: 7.4vw;
+    padding: 2.5vw 4.15vw;
   }
 }
 
