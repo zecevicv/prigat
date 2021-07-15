@@ -304,9 +304,9 @@ body {
   }
 }
 
-/* #Home Sticky
+/* #Sticky Btn
 ================================================== */
-.home-sticky {
+.sticky-btn {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -320,7 +320,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .home-sticky {
+  .sticky-btn {
     display: none;
   }
 }
@@ -678,7 +678,8 @@ body {
 
 /* #Body Bg Green
 ================================================== */
-.body-bg-green {
+.body-bg-green,
+.body-bg-dark-green {
   min-height: 100vh;
   background-image: url('../img/backgrounds/green-bg-desktop.jpg');
   background-size: cover;
@@ -697,6 +698,10 @@ body {
 
   .body-bg-green.addons-mobile {
     background-image: url('../img/backgrounds/green-bg-mobile-addons.jpg');
+  }
+
+  .body-bg-dark-green {
+    background-image: url('../img/backgrounds/dark-green-bg-mobile.jpg');
   }
 }
 
@@ -998,5 +1003,55 @@ body {
   
   .parents-2 input[type="text"]:not(:last-child) {
     margin-left: 2.6vw;
+  }
+}
+
+/* #Internal Page
+================================================== */
+.internal-page {
+  color: white;
+  padding: 2vw 0;
+}
+
+.internal-page .container {
+  width: 30%;
+}
+
+.internal-page h1 {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.internal-page .accordion {
+  margin-bottom: 3vw;
+}
+
+.internal-page .collapsible:not(:last-child) {
+  margin-bottom: 1vw;
+}
+
+.internal-page .collapse p {
+  opacity: .7;
+}
+
+@media (max-width: 1023.98px) {
+  .internal-page {
+    padding: 10vw 0;
+  }
+  
+  .internal-page .container {
+    width: 92%;
+  }
+
+  .internal-page h1 {
+    margin-bottom: 7.8vw;
+  }
+  
+  .internal-page .accordion {
+    margin-bottom: 10vw;
+  }
+
+  .internal-page .collapsible:not(:last-child) {
+    margin-bottom: 4vw;
   }
 }
