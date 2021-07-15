@@ -44,6 +44,12 @@ body {
   border: none;
 }
 
+.btn-primary.outline {
+  color: #ba322f;
+  background-color: white;
+  border: 2px solid #ba322f;
+}
+
 .btn-secondary {
   color: white;
   background-color: #e99444;
@@ -800,6 +806,7 @@ body {
   /* Form */
   .form-page form {
     padding: 0 4%;
+    margin-bottom: 10vw;
   }
   
   .form-page .form-group:not(:last-child) {
@@ -842,4 +849,77 @@ body {
   .checkbox label {
     padding-right: 3.65vw;
   }
+}
+
+/* #Form Page Modal
+================================================== */
+.form-page-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-page-modal .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  background-color: white;
+  padding: 2vw 4vw 2.5vw 4vw;
+}
+
+.form-page-modal h2 {
+  color: #26559e;
+  margin-bottom: 2vw;
+}
+
+.form-page-modal .btn {
+  width: 100%;
+}
+
+.form-page-modal .btn:last-child {
+  margin-top: .65vw;
+}
+
+.form-page-modal {
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all .4s ease;
+  backface-visibility: hidden;
+}
+
+.form-page-modal.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 1023.98px) {
+  .form-page-modal .container {
+    width: 95%;
+    padding: 13vw 0 16.6vw 0;
+  }
+  
+  .form-page-modal h2 {
+    margin-bottom: 13.5vw;
+  }
+
+  .form-page-modal .btn {
+    width: 80%;
+    padding: 3vw 4.15vw;
+  }
+  
+  .form-page-modal .btn:last-child {
+    margin-top: 2vw;
+  }
+  
 }

@@ -96,3 +96,32 @@ gallery.on('slideChangeTransitionStart', function () {
 
   textInput.classList.add(slideText.classList[1]);
 });
+
+/* #Form Page Modal
+  ======================================================= */
+const formModalToggler = document.querySelector('.form-page-modal-toggler');
+const formModals = document.querySelectorAll('.form-page-modal');
+
+if (formModalToggler) {
+  formModalToggler.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    const modal = document.querySelector(formModalToggler.dataset.modal);
+    
+    if (modal) {
+      modal.classList.add('show');
+      body.classList.add('no-scroll');
+    }
+  });
+}
+
+if (formModals) {
+  formModals.forEach((modal) => {
+    modal.addEventListener('click', (e) => {
+      if (!e.target.closest('.container')) {
+        modal.classList.remove('show');
+      body.classList.remove('no-scroll');
+      }
+    });
+  });
+}
