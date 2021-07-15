@@ -964,3 +964,39 @@ body {
     padding: 0 25%;
   }
 }
+
+/* #Parents 2
+================================================== */
+.parents-2 .input-group {
+  display: flex;
+}
+
+.parents-2 input[type="text"] {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 3px solid white;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  text-align: center;
+  width: 4.5vw;
+  padding: 0;
+}
+
+.parents-2 input[type="text"]:not(:last-child) {
+  margin-left: 1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .parents-2 h1 {
+    margin-top: 25vw;
+  }
+
+  .parents-2 input[type="text"] {
+    width: 12vw;
+  }
+  
+  .parents-2 input[type="text"]:not(:last-child) {
+    margin-left: 2.6vw;
+  }
+}
