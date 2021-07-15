@@ -1034,6 +1034,12 @@ body {
   opacity: .7;
 }
 
+.internal-page.expert-word p {
+  text-align: center;
+  line-height: 1.25;
+  margin: 1.5vw 0;
+}
+
 @media (max-width: 1023.98px) {
   .internal-page {
     padding: 10vw 0;
@@ -1053,5 +1059,9 @@ body {
 
   .internal-page .collapsible:not(:last-child) {
     margin-bottom: 4vw;
+  }
+
+  .internal-page.expert-word p {
+    margin: 8vw 0;
   }
 }
