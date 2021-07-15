@@ -23,6 +23,10 @@ body {
   letter-spacing: 0;
 }
 
+.text-green {
+  color: #1dab57;
+}
+
 /* #Btn
 ================================================== */
 .btn {
@@ -295,5 +299,168 @@ body {
 @media (min-width: 1024px) {
   .home-sticky {
     display: none;
+  }
+}
+
+/* #BG Single
+================================================== */
+.message-single {
+  padding-bottom: 1.5vw;
+}
+
+.message-single .container {
+  width: 30%;
+}
+
+.message-single .container > a {
+  padding: 1vw 0;
+  display: block;
+}
+
+.message-single .message {
+  position: relative;
+}
+
+.message-single .message .bg img {
+  width: 100%;
+}
+
+/* Text */
+.message-single .message .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.message-single .message input {
+  text-align: center;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  width: 100%;
+}
+
+.message-single .message input::placeholder {
+  color: inherit;
+}
+
+/* Message Info */
+.message-single .message-info {
+  margin-bottom: 4.68vw;
+}
+
+.message-single .message-info .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 1.5vw;
+  margin: 1vw 0;
+}
+
+.message-single .message-info .row > div {
+  display: flex;
+  align-items: baseline;
+}
+
+/* Like */
+.message-single .like {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 0 20%;
+}
+
+.message-single .like .heart-icon-wrapper {
+  margin-right: .5vw;
+  display: flex;
+}
+
+.message-single .like .heart-icon {
+  width: 1.8vw;
+}
+
+.message-single .like .heart-icon.full {
+  display: none;
+}
+
+.message-single .like.liked .heart-icon {
+  display: none;
+}
+
+.message-single .like.liked .heart-icon.full {
+  display: block;
+}
+
+/* Social */
+.message-single .message-social {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5vw;
+}
+
+.message-single .message-social ul {
+  display: flex;
+}
+
+.message-single .message-social ul li:not(:last-child) {
+  margin-left: .75vw;
+}
+
+.message-single .message-social ul img {
+  width: 2.6vw;
+}
+
+@media (max-width: 1023.98px) {
+  .message-single {
+    padding-bottom: 10vw;
+  }
+  
+  .message-single .container {
+    width: 100%;
+  }
+  
+  .message-single .container > a {
+    padding: 3.33vw 4%;
+  }
+
+  /* Message Info */
+  .message-single .message-info {
+    margin-bottom: 20vw;
+  }
+
+  .message-single .message-info .row {
+    padding: 0 4%;
+    margin: 3vw 0;
+    align-items: center;
+  }
+
+  .message-single .message-info .row > div {
+    display: flex;
+    align-items: baseline;
+  }
+
+  /* Like */
+  .message-single .like .heart-icon-wrapper {
+    margin-right: 2vw;
+  }
+
+  .message-single .like .heart-icon {
+    width: 5.2vw;
+  }
+
+  /* Social */
+  .message-single .message-social {
+    padding: 0 4%;
+    align-items: center;
+  }
+
+  .message-single .message-social ul li:not(:last-child) {
+    margin-left: 2.6vw;
+  }
+
+  .message-single .message-social ul img {
+    width: 8.33vw;
   }
 }
