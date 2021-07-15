@@ -57,6 +57,12 @@ body {
   border: none;
 }
 
+.btn-tertiary {
+  background-color: white;
+  color: #1dab57;
+  border: none;
+}
+
 @media (max-width: 1023.98px) {
   .btn {
     font-size: 5.73vw;
@@ -921,5 +927,17 @@ body {
   .form-page-modal .btn:last-child {
     margin-top: 2vw;
   }
-  
+}
+
+/* #Parents
+================================================== */
+.parents h1 {
+  margin-top: 5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .parents h1 {
+    margin-top: 40vw;
+    padding: 0 25%;
+  }
 }
