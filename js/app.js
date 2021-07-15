@@ -27,8 +27,10 @@ if (homeGrid) {
       if (!e.target.closest('.like')) {
         const modal = document.querySelector(item.dataset.modal);
 
-        modal.classList.toggle('show');
-        body.classList.toggle('no-scroll');
+        if (modal) {
+          modal.classList.toggle('show');
+          body.classList.toggle('no-scroll');
+        }
       }
     });
   });
