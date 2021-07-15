@@ -354,7 +354,7 @@ body {
 
 .message-single .message-info .row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 0 1.5vw;
   margin: 1vw 0;
