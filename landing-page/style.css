@@ -1,0 +1,196 @@
+/* #Font
+================================================== */
+@font-face {
+  font-family: "almoni";
+  font-weight: 300;
+  src: url("../font/almoni-dl-aaa-300.woff");
+}
+
+@font-face {
+  font-family: "almoni";
+  font-weight: 400;
+  src: url("../font/almoni-dl-aaa-400.woff");
+}
+
+@font-face {
+  font-family: "almoni";
+  font-weight: 700;
+  src: url("../font/almoni-dl-aaa-700.woff");
+}
+
+body {
+  font-family: "almoni", sans-serif;
+  letter-spacing: 0;
+  color: #1b7114;
+}
+
+/* #General
+================================================== */
+.container {
+  position: relative;
+}
+
+.bg img,
+.bg picture {
+  width: 100%;
+}
+
+.fruit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fruit img,
+.fruit picture {
+  width: 100%;
+}
+
+.bottles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bottles img,
+.bottles picture {
+  width: 100%;
+}
+
+.new {
+  position: absolute;
+  top: 4.16vw;
+  right: 0;
+  width: 14.32vw;
+}
+
+.new img,
+.new picture {
+  width: 100%;
+}
+
+.logo-1 {
+  position: absolute;
+  top: 3.125vw;
+  left: 3.125vw;
+  width: 15.67vw;
+}
+
+.logo-1 img,
+.logo-1 picture {
+  width: 100%;
+}
+
+.logo-2 {
+  position: absolute;
+  top: 35.31vw;
+  right: 24.94vw;
+  width: 20.625vw;
+}
+
+.logo-2 img,
+.logo-2 picture {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 9.21vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54.58vw;
+}
+
+.btn {
+  position: absolute;
+  top: 34.11vw;
+  left: 24.94vw;
+  width: 25.625vw;
+}
+
+.btn img,
+.btn picture {
+  width: 100%;
+}
+
+.text-2 {
+  position: absolute;
+  top: 25vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 57vw;
+  line-height: 1;
+  text-align: center;
+}
+
+.text-2 span {
+  display: block;
+}
+
+.text-3 {
+  position: absolute;
+  bottom: 1vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 58.58vw;
+  text-align: center;
+  line-height: 1.2;
+  color: #027d05;
+}
+
+@media (max-width: 1023.98px) {
+  .bottles {
+    bottom: 42.81vw;
+    left: auto;
+    right: 0;
+    width: 95.2%;
+  }
+  
+  .new {
+    top: 106.45vw;
+    right: 0;
+    width: 25.93vw;
+  }
+  
+  .logo-1 {
+    top: 7.8vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 31.25vw;
+  }
+  
+  .logo-2 {
+    top: auto;
+    bottom: 18.75vw;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32.6vw;
+  }
+  
+  .text {
+    top: 32.81vw;
+    width: 90vw;
+  }
+  
+  .btn {
+    top: auto;
+    bottom: 18vw;
+    left: 0;
+    width: 100%;
+  }
+  
+  .text-2 {
+    top: 58.95vw;
+    width: 83%;
+  }
+  
+  .text-3 {
+    bottom: 4.68vw;
+    width: 90vw;
+    text-align: right;
+    line-height: 1;
+  }
+}
